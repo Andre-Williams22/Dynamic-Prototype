@@ -43,12 +43,6 @@
 	</div>
 </div>
 </nav>
-
-
-		<div class="container">
-		<div id="brandname">
-			ML App
-		</div>
 		<center> <u> <h2>World Class Spam Detector</h2></u> </center>
 		
 	</div>
@@ -63,9 +57,9 @@
     <br>
 		
 	{% if prediction == 1 %}
-	<h2 style="color:red;">Spam</h2>
+	<h2 style="color:red;">Bot</h2> <!-- Spam -->
 	{% elif prediction == 0%}
-	<h2 style="color:blue;">Not a Spam(Ham)</h2>
+	<h2 style="color:blue;">Not A Bot (Human) </h2> <!-- Ham-->
 	{% endif %}
 
 </center>
