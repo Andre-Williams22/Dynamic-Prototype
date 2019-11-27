@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 from twilio.rest import Client
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 
 account_sid = 'AC1e5cce5f981923f34e5d2309d9a70cbb' #os.environ["account_sid"]
@@ -25,7 +25,7 @@ stripe_keys = {
 stripe.api_key = stripe_keys['secret_key']
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def home():
 	return render_template('index.html', key=stripe_keys['publishable_key'])
 
