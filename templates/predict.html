@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='../static/style.css') }}">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Innovating in Old Age Industries</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel='stylesheet' href='https://bootswatch.com/4/slate/bootstrap.min.css'>
+	
 </head>
 <body>
 
-	<header>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+<div class="container-fluid">
+	 <a class="navbar-brand" href="#"><!--<img src="../static/img/pathscan.png" style="width:400px;height:150px;">--></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item-active">
+				<a class="nav-link" href="/">Home</a>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" href="#">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="services.html">Services</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Team</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="contact.html">Connect</a>
+			</li> 
+		</ul>
+	</div>
+</div>
+</nav>
+
+
 		<div class="container">
 		<div id="brandname">
 			ML App
@@ -15,10 +53,14 @@
 		
 	</div>
 	</header>
-	<h1><b>Results for Comment: </b></h1>
-	<div class="results">
+    <center>
+    <br>
+    <br>
+    <br>
+	<h1 style="color: Green;"><b>Results for Comment: </b></h1>
+	
 
-
+    <br>
 		
 	{% if prediction == 1 %}
 	<h2 style="color:red;">Spam</h2>
@@ -26,7 +68,6 @@
 	<h2 style="color:blue;">Not a Spam(Ham)</h2>
 	{% endif %}
 
-	</div>
-
+</center>
 </body>
 </html>
