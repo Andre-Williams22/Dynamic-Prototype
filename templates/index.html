@@ -1,37 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Home</title>
-	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
+{% extends 'base.html' %}
 
-	<header>
-		<div class="container">
-		<div id="brandname">
-			Machine Learning App with Flask
-		</div>
-		<h2>Spam Detector For SMS Messages</h2>
-		</div>
-	</header>
+{% block content %}
+<center>
+<h2> Never Get Tricked By A Bot Again For Just $5.00</h2>
+<br>
 
-	<div class="ml-container">
+    <form action="/charge" method="post">
+        <script
+            src="https://checkout.stripe.com/checkout.js"
+            class="stripe-button"
+            data-key="{{ key }}"
+            data-description="A Flask Charge"
+            data-amount="500"
+            data-locale="auto">
+        </script>
+    </form>
+<br>
+<br>
+</center>
+{% endblock %}
 
-		<form action="{{ url_for('predict')}}" method="POST">
-		<p>Enter Your Message Here</p>
-		<!-- <input type="text" name="comment"/> -->
-		<textarea name="message" rows="4" cols="50"></textarea>
-		<br/>
-
-		<input type="submit" class="btn-info" value="predict">
-		
-	</form>
-		
-	</div>
-
-	
-	
-
-</body>
-</html>
