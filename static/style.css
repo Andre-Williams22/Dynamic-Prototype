@@ -5,7 +5,7 @@ html, body{
   width: 100%;
   font-family: 'Poppins', sans-serif;
   color: #222;
-  background-color: #CED7ED;
+  background-color: blue/*#CED7ED*/;
 }
 
 .navbar {

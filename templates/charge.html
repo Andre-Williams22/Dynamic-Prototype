@@ -9,22 +9,24 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
+	<link rel='stylesheet' href='https://bootswatch.com/4/slate/bootstrap.min.css'>
+	
 </head>
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 <div class="container-fluid">
-	<a class="navbar-brand" href="#"><img src="img/pathscan.png" style="width:400px;height:150px;"></a>
+	 <a class="navbar-brand" href="#"><!--<img src="../static/img/pathscan.png" style="width:400px;height:150px;">--></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarResponsive">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item-active">
-				<a class="nav-link" href="#">Home</a>
+				<a class="nav-link" href="index.html">Home</a>
 			</li>
+			<!---
 			<li class="nav-item">
 				<a class="nav-link" href="#">About</a>
 			</li>
@@ -36,7 +38,7 @@
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="contact.html">Connect</a>
-			</li>
+			</li> -->
 		</ul>
 	</div>
 </div>
@@ -51,21 +53,21 @@
 </ul>
 	<div class="carousel-inner">
 
-		<div class="carousel-item active" style="height: 600px; background-image: url(img/background.png); background-size: cover">  
+		<div class="carousel-item active" style="height: 600px; background-image: url(../static/img/copybackground.png); background-size: cover">  
 		
 		<div class="carousel-caption">
-			<h1 class="display-2">Pathscan</h1>
-			<h3> Machine Learning App with Flask </h3>
+			<h1 class="display-2">Bot Detector</h1>
+			<h3> Keeping You Informed </h3>
 					<button type="button" class="btn btn-outline-light btn-lg">View Demo</button>
 					<button type="button" class="btn btn-primary btn-lg">Get Started</button>
 		</div>
 	</div>
 
-	<div class="carousel-item" style="height: 600px; background-image: url(img/background2.png); background-size: cover; background-position: center">
+	<div class="carousel-item" style="height: 600px; background-image: url(../static/img/bot.png); background-size: cover; background-position: center">
 		
 	</div>
 
-		<div class="carousel-item" style="height: 600px; background-image: url(img/finance.png); background-size: cover; background-position: center">
+		<div class="carousel-item" style="height: 600px; background-image: url(../static/img/facts.png); background-size: cover; background-position: center">
 		</div>
 	</div>
 </div>
@@ -81,7 +83,6 @@
 
 </div>
 </div>
-
 <!--- Welcome Section -->
 <div class="container-fluid padding">
 <div class="row welcome text-center">
@@ -102,7 +103,7 @@
 
 
 		<form action="{{ url_for('predict')}}" method="POST">
-		<p>Enter Your Message Here</p>
+		<p>Enter Your Message Below</p>
 		<!-- <input type="text" name="comment"/> -->
 		<textarea name="message" rows="10" cols="100"></textarea>
         <br>
