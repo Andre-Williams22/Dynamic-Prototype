@@ -5,7 +5,7 @@ html, body{
   width: 100%;
   font-family: 'Poppins', sans-serif;
   color: #222;
-  background-color: blue/*#CED7ED*/;
+  background-color: #CED7ED;
 }
 
 .navbar {
@@ -43,10 +43,7 @@ html, body{
   text-shadow: 1px 1px 10px #000;
   padding-bottom: 1rem;
 }
-.btn-primary{
-  background-color: #3345eb;
-  border: 1px solid #176cec;
-}
+
 .btn-primary:hover {
   background-color: #563d7c;
   border: 1px solid #563d7c;
