@@ -29,6 +29,11 @@ stripe.api_key = stripe_keys['secret_key']
 def home():
 	return render_template('index.html', key=stripe_keys['publishable_key'])
 
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 @app.route('/predict',methods=['POST'])
 def predict():
 	df= pd.read_csv("spam.csv", encoding="latin-1")
