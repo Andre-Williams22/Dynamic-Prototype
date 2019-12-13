@@ -82,6 +82,8 @@ jupyter-core==4.5.0
 jupyterlab==1.1.4
 jupyterlab-server==1.0.6
 Keras==2.2.4
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.0
 keyring==18.0.0
 kiwisolver==1.1.0
 lazy-object-proxy==1.4.2
@@ -148,6 +150,9 @@ pylint==2.4.2
 pyodbc==4.0.27
 pyOpenSSL==19.0.0
 pyparsing==2.4.2
+PyQt5==5.12.3
+PyQt5-sip==12.7.0
+PyQtWebEngine==5.12.1
 pyrsistent==0.15.4
 PySocks==1.7.1
 pytest==5.2.1
@@ -206,6 +211,7 @@ tqdm==4.36.1
 traitlets==4.3.3
 tweepy==3.8.0
 twilio==6.33.1
+typed-ast==1.4.0
 unicodecsv==0.14.1
 urllib3==1.24.2
 wcwidth==0.1.7
