@@ -12,8 +12,8 @@ from twilio.rest import Client
 app = Flask(__name__, static_url_path='/static')
 
 
-account_sid = 'AC1e5cce5f981923f34e5d2309d9a70cbb' #os.environ["account_sid"]
-auth_token = '6ff543682f94c8de705d04f5f3c1768e' #os.environ['auth_token']
+account_sid = '' #os.environ["account_sid"]
+auth_token = '' #os.environ['auth_token']
 client = Client(account_sid, auth_token)
 
 stripe_keys = {
