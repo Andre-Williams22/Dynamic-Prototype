@@ -6,15 +6,15 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.externals import joblib
 import stripe 
 from dotenv import load_dotenv
-load_dotenv()
-from twilio.rest import Client
+# load_dotenv()
+# from twilio.rest import Client
 
 app = Flask(__name__, static_url_path='/static')
 
 
-account_sid = '' #os.environ["account_sid"]
-auth_token = '' #os.environ['auth_token']
-client = Client(account_sid, auth_token)
+# account_sid = '' #os.environ["account_sid"]
+# auth_token = '' #os.environ['auth_token']
+# client = Client(account_sid, auth_token)
 
 stripe_keys = {
   'secret_key': 'sk_test_S1UKtrSKbTVMv7YzQpch6RBc007RPTTUgW',
