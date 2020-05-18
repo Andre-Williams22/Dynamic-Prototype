@@ -21,7 +21,6 @@ stripe_keys = {
   'publishable_key': 'pk_test_LqQaKSR0V30253rAvgA8Bcd300FMsyQ5d2'
 }
 
-
 stripe.api_key = stripe_keys['secret_key']
 
 
